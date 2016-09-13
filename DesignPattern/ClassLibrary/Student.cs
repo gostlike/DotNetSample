@@ -14,39 +14,46 @@ namespace ClassLibrary
             this.course = course;
         }
 
-        #region Property,Accessor Sample Code
-        private string name ; 
-              
+        #region Property,Accessor
+        private string name ;               
         public string Name {
             //Accessor
             get { return name; }
             set { }
         }
-        
         public Student(string stuName) {
             this.name = stuName;
         }
-        #endregion       
+        #endregion
+        
+        /// <summary>
+        /// the courses picked by the student
+        /// </summary>
+        private List<Course> _courses { get; set; }
 
-        #region Relation Association Sample Code           
-        // 取得課程名稱               
-        public string getCourseName(Course course)
+        /// <summary>
+        /// the major cours of the student (Compostion)
+        /// </summary>
+        private Course majorCourse = new Course();
+
+        /// <summary>
+        /// get Course Name (Association)
+        /// </summary>
+        /// <param name="course"></param>
+        /// <returns></returns>
+        public string GetCourseName(Course course)
         {
             return course.Name;
         }
-        #endregion
 
-        #region Relation Aggregation Sample Code                
-        private Course course2;        
-        // 選課        
-        public void setCourse(Course course) {
-            this.course2 = course;
-        }
-        #endregion
-
-        #region Relation Compostion Sample Code
-        // Compostion
-        private Course course = new Course();
-        #endregion
+        /// <summary>
+        /// pick the course the student want (bi-directional Association , Aggregation)
+        /// reference Class level 
+        /// </summary>
+        /// <param name="course"></param>
+        public void PickCourse(Course course) {
+            _courses.Add(course);
+        }                              
+     
     }
 }
