@@ -1,6 +1,7 @@
 ﻿using System;
 using ClassLibrary;
 
+
 namespace ConsoleApplication
 {
     class Program
@@ -8,7 +9,14 @@ namespace ConsoleApplication
         static void Main(string[] args)
         {
             Program p = new Program();
-            p.accessorSample();
+            
+            //p.accessorSample();
+
+            Director director = new Director();
+            director.Builder = new ConcreteBuilder1();
+            director.createProduct();
+            Product prodcut = director.getProduct();
+            Console.ReadLine();
         }
 
         /// <summary>

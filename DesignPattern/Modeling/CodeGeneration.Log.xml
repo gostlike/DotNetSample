@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="程式碼產生/文字轉換記錄檔">
+  <MessageClass Name="Message" Label="訊息" Option="顯示資訊訊息" />
+  <MessageClass Name="Warning" Label="警告" Option="顯示警告" />
+  <MessageClass Name="Error" Label="錯誤" Option="顯示錯誤" />
+  <MessageClass Name="Property" Label="屬性" Option="顯示中繼資料" />
+  <MessageClass Name="Diagnostic" Label="訊息" Option="顯示診斷訊息" />
+  <Message Timestamp="2016-12-16T16:44:56" Importance="High" Text="程式碼產生或文字轉換已啟動。" />
+  <Message Timestamp="2016-12-16T16:44:56" Importance="Diagnostic" Text="名稱 = ClassTemplate" />
+  <Message Timestamp="2016-12-16T16:44:56" Importance="Diagnostic" Text="覆寫 = True" />
+  <Message Timestamp="2016-12-16T16:44:56" Importance="Diagnostic" Text="ProjectPath = ..\ModelingLib\ModelingLib.csproj" />
+  <Message Timestamp="2016-12-16T16:44:56" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-12-16T16:44:56" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-12-16T16:44:56" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-12-16T16:44:56" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-12-16T16:44:56" Importance="Medium" Text="Modeling'的文字範本繫結 'ClassTemplate' 會將 ClassTemplate.t4 套用至 'Modeling::Builder' -  (Class) " />
+  <Message Timestamp="2016-12-16T16:44:57" Importance="Medium" Text="'Modeling::Builder' -  (Class) : 成功 (已建立檔案) - D:\TFS_GIT\DotNetSample\DesignPattern\ModelingLib\GeneratedCode\Builder.cs" />
+  <Message Timestamp="2016-12-16T16:44:57" Importance="Diagnostic" Text="名稱 = StructTemplate" />
+  <Message Timestamp="2016-12-16T16:44:57" Importance="Diagnostic" Text="覆寫 = True" />
+  <Message Timestamp="2016-12-16T16:44:57" Importance="Diagnostic" Text="ProjectPath = ..\ModelingLib\ModelingLib.csproj" />
+  <Message Timestamp="2016-12-16T16:44:57" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-12-16T16:44:57" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-12-16T16:44:57" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-12-16T16:44:57" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-12-16T16:44:57" Importance="Medium" Text="Modeling'的文字範本繫結 'StructTemplate' 會將 StructTemplate.t4 套用至 'Modeling::Builder' -  (Class) " />
+  <Message Timestamp="2016-12-16T16:44:57" Importance="Diagnostic" Text="'Modeling::Builder' -  (Class): 沒有產生檔案，因為範本 'StructTemplate.t4' 的 'AppliesToElement' 方法評估為 false。" />
+  <Message Timestamp="2016-12-16T16:44:57" Importance="High" Text="程式碼產生完成。錯誤: 0。警告: 0。" />
+</Log>

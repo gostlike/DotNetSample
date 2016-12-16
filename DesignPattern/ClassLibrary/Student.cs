@@ -9,6 +9,7 @@ namespace ClassLibrary
     // Class definition.
     public class Student
     {
+        Course course;
         public Student(Course course)
         {
             this.course = course;
