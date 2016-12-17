@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="67741442-c6c2-4a82-a62b-54ae0e320fa1" name="Builder.before2" linkedPackageId="3ac7d381-9d87-4e4b-8b53-88f56db4e4cc" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="9e495bfa-f6d4-4dcb-b9ce-0ea3eed2f60d">
+      <elementDefinition Id="cc1f2e8e-0c56-4add-a619-5246504da6c7" />
+      <body>製作套餐()
+{  
+   switch(套餐種類)
+     套餐.包裝套餐
+}</body>
+    </comment>
+    <comment Id="e1745236-9dc5-453a-8f09-bea8b6e7daab">
+      <elementDefinition Id="869dac50-6307-4fa7-b1e4-87cc02e26676" />
+      <body>包裝套餐()
+{
+   套餐.主餐 = 套餐.製作主餐
+   套餐.附餐 = 套餐.製作附餐
+   套餐.飲料 = 套餐.製作飲料
+}</body>
+    </comment>
+  </ownedCommentsInternal>
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="ca60f7fc-a544-4552-b78a-8b2e0ddc690b" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="56bc94f8-47ad-4ba2-8bf3-a58deb088c2b" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="116d27fd-1947-4f25-9612-170422a33d88">
+          <propertyInstance Id="5f3fcff8-7f2a-4bef-9ac1-263f74991683" name="BaseName">
+            <elementDefinition Id="d5e46b6b-6143-4d9d-a201-4cdc4345ea42" />
+          </propertyInstance>
+          <elementDefinition Id="dfc02137-b425-49f4-b61a-0ab8d653649b" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="db204198-d9dd-42de-908e-1a6cb76cae97">
+          <propertyInstance Id="1546299a-67bb-477a-9f71-c395c9405da6" name="ClrAttributes">
+            <elementDefinition Id="5d26d15f-6b63-4c94-ae54-161662852183" />
+          </propertyInstance>
+          <elementDefinition Id="ea3c6843-621c-4936-84f7-be7c54bff307" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="853f260e-5ea9-4469-a52e-0dfb2d959dfb">
+          <propertyInstance Id="545ad899-0156-4936-8d9c-392716e02619" name="Usings">
+            <elementDefinition Id="30ccbaf9-0983-4b25-8da7-dc2f72b4783c" />
+          </propertyInstance>
+          <elementDefinition Id="2ebb8aa6-8ffe-4901-9f29-f5a6df1f221b" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="104a9119-bc19-48a1-aae3-b9481ccdc31f" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="adf7dc9e-efb7-41ce-8d34-5c7d662c6e37" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="8edede10-a148-44de-ada3-2d16f8b9e58a">
+          <propertyInstance Id="684b9dcd-aaeb-448d-b9ed-eaade01dc4fb" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="eb642e61-a670-4009-ae0b-15a433a85e32" />
+          </propertyInstance>
+          <elementDefinition Id="e4542e97-edb1-420b-b296-7dccfbb6f606" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d8f78cb3-0507-4294-9b39-e649d27b41d7">
+          <propertyInstance Id="f67600fc-04ed-4e95-b6e0-760971fbe70d" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="d2287670-0a3e-495a-b2f0-2c73e53f3054" />
+          </propertyInstance>
+          <elementDefinition Id="f841b601-7bc7-4c75-be52-5828ce8636c7" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="03279bc8-e839-42b1-9059-299ead4419e1">
+          <propertyInstance Id="2f84bc5b-96e5-4bb1-9ef2-fffc4c394922" name="ProjectPath" value="ClassTemplate=..\ModelingLib\ModelingLib.csproj|EnumTemplate=..\ModelingLib\ModelingLib.csproj|InterfaceTemplate=..\ModelingLib\ModelingLib.csproj|StructTemplate=..\ModelingLib\ModelingLib.csproj">
+            <elementDefinition Id="30fbe39f-3c6f-499e-ad4f-2cfbcf74de43" />
+          </propertyInstance>
+          <elementDefinition Id="df53eee3-d0ef-4540-b01a-92f1b5d79940" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="dc7675ef-8183-443a-b0e1-bb2d637ce084">
+          <propertyInstance Id="9d01ae6c-3f17-4459-9cf8-49494520ffce" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="2317043d-e669-41d7-8cf3-e44bffde029f" />
+          </propertyInstance>
+          <elementDefinition Id="680706f4-e8c2-466f-946d-d1a5ffbec0b5" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="94f2ed5c-f841-4b16-8f46-be65e3f4ef55">
+          <propertyInstance Id="381c49fc-ed2b-4eed-a3b5-6e20e8f0bf11" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="86c5b6ee-0f52-41dd-8daf-6ffdbc5e1b59" />
+          </propertyInstance>
+          <elementDefinition Id="7e4cd445-e580-4078-960e-21b3a641cf20" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a51f8bcf-41e5-4051-98a9-c0958d144d41">
+          <propertyInstance Id="c4b3db88-2e57-4c65-8bb3-b38bfd1a0fb8" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="30e257fb-24df-49a0-82c7-3e02cb0e6001" />
+          </propertyInstance>
+          <elementDefinition Id="d95366de-49c7-4763-a688-dcb45b074033" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="12981e45-2774-424c-b6f3-e404873b5637">
+          <propertyInstance Id="2da3929e-6a01-4565-bb15-265c113ddb5c" name="Parameters">
+            <elementDefinition Id="cac47047-f63c-465e-a4c6-c140ae9ee436" />
+          </propertyInstance>
+          <elementDefinition Id="11152105-0aee-4973-851d-a151351f7829" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="fdf28769-e34c-43b1-9dbf-e869c98cbfda">
+      <profileInstance Id="ac524668-bb25-4207-b677-d47f7d270e48" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="550c5e4f-3076-450d-ad9b-7c2914e37862">
+      <profileInstance Id="46f21377-1a06-49cb-b2f7-4071e6ed5470" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="982c309d-8d20-4a1b-b6fd-2482c3d455bc">
+      <profileInstance Id="81fac0bb-ed19-4f40-8b98-c9381fa4a656" name="CSharpProfile">
+        <elementDefinition Id="19822a21-c9e6-4c03-8752-9ea60bd41f39" />
+      </profileInstance>
+      <elementDefinition Id="9587d31e-88e8-4231-a052-f83072325e4e" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="595338b6-ff29-4f22-8db0-d078d1eb7036">
+      <profileInstance Id="966b187e-99b1-4053-9bad-e0aad7448c06" name="TextTemplateBindings">
+        <elementDefinition Id="979d2c7c-0a47-4859-869b-f6d0dc472eaf" />
+      </profileInstance>
+      <elementDefinition Id="10721491-f98f-423d-b346-bc03578b8852" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="33e7348f-34ad-4b59-9b6e-66198dae540e" name="店員_Before2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b40e19a5-c06b-445c-8d03-1e2dd43cd43f" />
+        <ownedOperationsInternal>
+          <operation Id="e69e084a-6e7b-4ab6-8c5f-a2d7ee4ac5c9" name="製作套餐" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="51e31e47-c04e-40ac-99ce-f9126e7e4c73" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cc15b036-3dd4-41bf-bb5e-9d59848c42f3" name="套餐種類" direction="In" isUnique="false">
+                  <elementDefinition Id="6e88dde6-38df-470f-87f3-c126c902dfb9" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dd557f8f-9487-4ed8-80bf-5a21e4968de3" direction="Return">
+                  <elementDefinition Id="e16efe49-5eb0-4ad2-b980-fc04dd6c566b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bad191ab-9959-4b97-9da8-863c9c9d00da" LastKnownName="套餐" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="164a34a7-9962-49f4-b8c8-19833d0e99d0" name="套餐_Before" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="85bd0fca-3bf5-4b30-9570-a3a434c18a7e" />
+        <ownedAttributesInternal>
+          <property Id="388597c7-8fd3-42d2-9a1a-857d9c3f8f29" name="主餐" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="610a5905-42f9-4181-9911-d953056b574e" />
+          </property>
+          <property Id="8dfbcf1a-8389-4824-a4e6-a0c04814c79a" name="附餐" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fafec9fe-184e-401d-bfab-e723d6a00ab2" />
+          </property>
+          <property Id="cc768470-9591-44e4-9771-4b3ab4a209f0" name="飲料" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="06bca540-78cd-43a0-b3a3-57f01f668381" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="91678348-9217-40b3-aea9-533b0a6a9cff" name="製作主餐" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e78d1140-fffe-49fd-ad5b-4d45e267cc33" />
+          </operation>
+          <operation Id="649ef0d0-a837-4443-ac95-8ecc586940ce" name="製作附餐" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="84490eda-95f8-415d-8cc5-f30243f9641d" />
+          </operation>
+          <operation Id="efe2b5f8-4f8b-4772-8f76-14b6aa4dd23e" name="製作飲料" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b5afc3d8-2c10-4ef4-8ee2-72dbdec56f9b" />
+          </operation>
+          <operation Id="b81eb688-60ca-4260-b2e8-13428dffd12c" name="包裝套餐" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="94e3d56f-386d-4e3a-a1c0-0332d3c156a4" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4ad4ca0c-ac64-4172-abe6-51dc6cf1e598" direction="Return">
+                  <elementDefinition Id="24b0eb7e-07b6-4318-833e-c6e26f68d337" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5081013b-c31d-42c3-8846-e91c1cc497a3" name="A套餐_Before" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="55d15983-51ff-4b77-a4d6-18a533420a55" />
+        <ownedAttributesInternal>
+          <property Id="55656d86-9e1f-415a-90c2-15befa56e6ad" name="A主餐" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1d738eaf-9389-498f-85e2-078532c95076" />
+          </property>
+          <property Id="e10f774f-0ef5-4730-bc98-9418d8b98eac" name="A附餐" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="83bff85e-ce0a-483b-8a26-4c03de1e50d1" />
+          </property>
+          <property Id="02036712-7d01-4c15-8147-466ca36d8db8" name="A飲料" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="242f3236-7249-484f-85a1-5635d49548fe" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6377f909-1395-4101-98a3-bbe28093add6" name="製作A主餐" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="32b9cbb6-4068-4b4f-8069-dac3d5221ba1" />
+          </operation>
+          <operation Id="73ff97a6-a619-4430-9206-f0244f0a833e" name="製作A附餐" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b2269006-8131-4112-9140-5d37356c50bf" />
+          </operation>
+          <operation Id="09e159d4-8421-435a-a917-3cd45ab1b45f" name="製作A飲料" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c135cd37-db03-4419-825d-cb36f4c70062" />
+          </operation>
+          <operation Id="25baed54-364b-46c2-bba9-ea78b8369a2e" name="製作A附餐2" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fbd8cf4b-b89b-4340-8c2b-2547ba480ec0" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aca3a215-1ab3-4d1e-aa6d-c09a9cf628bf" name="B套餐_Before" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="19d48505-e21f-46ff-9691-ef2428bbab1f" />
+        <ownedAttributesInternal>
+          <property Id="5bcf0400-108a-4809-8e91-b5dfa360f164" name="B主餐" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0787209d-4714-4dff-9359-c3ad2c247fbb" />
+          </property>
+          <property Id="02ddb23c-663b-4011-ace0-a79758bd8c91" name="B附餐" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4be1ddfd-a995-4e50-98f0-9eff047500d0" />
+          </property>
+          <property Id="8bc0333e-6ada-4172-bc53-8c4968000eb6" name="B飲料" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1014d8f4-ea77-41d2-a222-9ca0dece93ef" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="65e2f6b6-8d01-4785-af20-660921629d2f" name="製作B主餐" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ce96d054-936c-4f46-94a0-7129ea8c4d6d" />
+          </operation>
+          <operation Id="d3cb5cca-bab7-48de-ba62-348616f719eb" name="製作B附餐" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c5458568-e5b4-4f49-b6bb-e4adde3c0106" />
+          </operation>
+          <operation Id="11181f64-6fae-4492-89f6-47da025c0ab5" name="製作B飲料" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d67080ff-a87f-4811-b533-11a78ffc0020" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="bad191ab-9959-4b97-9da8-863c9c9d00da" name="套餐" isAbstract="false" isLeaf="false" cachedFullName="套餐">
+        <elementDefinition Id="f836fbbf-2ad2-409a-9776-8766d1808776" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="3ac7d381-9d87-4e4b-8b53-88f56db4e4cc" name="Modeling">
+    <elementDefinition Id="557c96d5-36b7-4f08-a2f0-04be4a88cdba" />
+  </package>
+</logicalClassDesignerModel>

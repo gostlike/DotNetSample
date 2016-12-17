@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Builder.before1">
+  <logicalClassDesignerModelMoniker Id="3c557b1e-8757-4bba-bbfb-56db28f5c17c" />
+  <nestedChildShapes>
+    <classShape Id="ea16efc7-32fe-43b0-bb62-2c8997b0f3af" absoluteBounds="4.25, 0.75, 1.625, 2.3680013020833335" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="0657b0f6-6a83-4317-b21e-c5b1d194ea00" LastKnownName="店員_Before" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="bd78a8f7-79c9-48a7-bf94-4c04e252f5d6" absoluteBounds="4.2650000000000006, 1.1400000000000001, 1.5950000000000002, 0.93400065104166663" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="b7d0953d-8ea3-40a2-9d27-92cf8c7fa79f" absoluteBounds="4.265, 2.0840006510416664, 1.5950000000000002, 0.93400065104166663" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <commentShape Id="054fb1e1-8662-4eae-a2ae-5b3d9e643b98" absoluteBounds="0.5, 0.75, 3.25, 0.625" customColor="251, 247, 200">
+      <commentMoniker Id="55289e0e-b581-4957-a225-eba9a646ef8b" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="caf26dd3-775d-448a-bb99-393fd708c419" absoluteBounds="0.5, 1.5, 3.25, 0.625" customColor="251, 247, 200">
+      <commentMoniker Id="1969f2e6-1500-4498-9771-667534528936" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="9372abcb-57c6-4e8a-b784-ad28b5a39159" absoluteBounds="0.5, 2.25, 2.875, 0.625" customColor="251, 247, 200">
+      <commentMoniker Id="946da5e4-a8fb-4caf-857a-5ecf03f2e74b" />
+      <relativeChildShapes />
+    </commentShape>
+    <classShape Id="0f41489e-1b0e-4ab1-ba35-5af39d2f86ac" absoluteBounds="6.625, 0.75, 1.625, 3.7833658854166661" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="7f5379e1-309e-4200-a807-fd0d6f3950a4" LastKnownName="店員_Before1" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="d66f1b0f-2cdf-4c35-82d2-5bafeeec744d" absoluteBounds="6.64, 1.1400000000000001, 1.5950000000000002, 1.641682942708333" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="30df50a7-2379-416d-adaf-a816d893dec1" absoluteBounds="6.64, 2.7916829427083329, 1.5950000000000002, 1.6416829427083335" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <commentShape Id="e38c98ad-dc38-4902-9b5c-89fc519bce1c" absoluteBounds="0.5, 3, 2.25, 1" customColor="251, 247, 200">
+      <commentMoniker Id="94061ef5-6f4f-4524-bc10-fd77b8936207" />
+      <relativeChildShapes />
+    </commentShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

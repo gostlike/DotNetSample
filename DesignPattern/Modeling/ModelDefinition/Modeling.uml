@@ -1,8 +1,85 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="557c96d5-36b7-4f08-a2f0-04be4a88cdba"
   name="Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="35b3ca51-f0a8-4cd5-9cd0-f26ebc213ebd">
+      <body>使用案例 : 店員製作A套餐
+1.店員依據A套餐:主餐、附餐、飲料 進行製作
+2.店員將製作完的主餐、附餐、飲料包裝成A套餐</body>
+    </comment>
+    <comment
+      Id="ecc08ea1-c736-4253-9787-17829a6580fe">
+      <body>使用案例 : 店員製作套餐
+1.店員依據套餐:主餐、附餐、飲料 進行製作
+2.店員將製作完的主餐、附餐、飲料包裝成套餐</body>
+    </comment>
+    <comment
+      Id="d7db87a6-63d7-43fa-b7f7-357c14d20a88">
+      <body>使用案例 : 店員製作B套餐
+1.店員依據B套餐:主餐、附餐、飲料 進行製作
+2.店員將製作完的主餐、附餐、飲料包裝成B套餐</body>
+    </comment>
+    <comment
+      Id="72238d1c-c316-4f3e-af4c-04014fc5c05f">
+      <body>使用案例 : 店員製作套餐
+1.店員依據套餐:主餐、附餐、飲料 進行製作
+2.店員將製作完的主餐、附餐、飲料包裝成套餐</body>
+    </comment>
+    <comment
+      Id="dbd3992a-a322-49b7-b7b9-f2a16c2c74ce">
+      <body>包裝套餐()
+{
+   套餐.主餐 = 套餐.製作主餐
+   套餐.附餐 = 套餐.製作附餐
+   套餐.飲料 = 套餐.製作飲料
+}</body>
+    </comment>
+    <comment
+      Id="94980027-70ab-4c21-b8c5-3f2e6f3a26d5">
+      <body>包裝套餐()
+{
+   製作主餐 done
+   製作附餐 done
+   製作飲料 done
+}</body>
+    </comment>
+    <comment
+      Id="3aa7d981-18d7-494c-ada9-5a02412793bf">
+      <body>執行包裝套餐SOP()
+{
+   SOP.製作主餐 done
+   SOP.製作附餐 done
+   SOP.製作飲料 done
+   return
+}</body>
+    </comment>
+    <comment
+      Id="cc1f2e8e-0c56-4add-a619-5246504da6c7">
+      <body>製作套餐()
+{  
+   switch(套餐種類)
+     套餐.包裝套餐
+}</body>
+    </comment>
+    <comment
+      Id="cc01b711-3492-4a0c-b2ea-e8251cc706cb">
+      <body>* build part for main
+* 隱藏複雜SOP
+* 規範SOP</body>
+    </comment>
+    <comment
+      Id="869dac50-6307-4fa7-b1e4-87cc02e26676">
+      <body>包裝套餐()
+{
+   套餐.主餐 = 套餐.製作主餐
+   套餐.附餐 = 套餐.製作附餐
+   套餐.飲料 = 套餐.製作飲料
+}</body>
+    </comment>
+  </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance
       Id="56bc94f8-47ad-4ba2-8bf3-a58deb088c2b"
@@ -2866,6 +2943,1311 @@
       <executionEvent
         Id="b55e4be6-5be1-425c-b295-bbf0cdd6c17f"
         name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="abefc93f-c062-49a9-b2f7-681cadaa29f7"
+        name="速食店"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="84cb8571-1630-4ccd-ae2e-82dceae565c3"
+        name="點購套餐"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="dfc33d8a-d62e-41d2-92e4-db77a1473381">
+            <useCaseMoniker
+              Id="42d2cda8-0eb0-402b-840b-b62e2a765e62"
+              LastKnownName="作套餐"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include
+            Id="ced83e86-8388-4a5c-be48-da0b8da90f7e">
+            <useCaseMoniker
+              Id="c288f4ee-c82e-4b81-a592-860e81b2e366"
+              LastKnownName="訂單"
+              LastKnownLocation="Modeling.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="abefc93f-c062-49a9-b2f7-681cadaa29f7"
+            LastKnownName="速食店"
+            LastKnownLocation="Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="530d9790-a756-41a6-b040-638453fa97d0"
+        name="客戶"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3dd72c5d-a15f-465b-8a9d-19ef3b06a51e"
+            isDerived="false"
+            sourceEndRoleName="客戶"
+            targetEndRoleName="點套餐"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="84cb8571-1630-4ccd-ae2e-82dceae565c3"
+              LastKnownName="點購套餐"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e729c166-c886-4ead-8e17-35a0328a0e15"
+                  name="客戶"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7d595295-3d06-460c-955b-1b028fd5f96f"
+                  name="點套餐"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d682cef1-786d-4d4a-8cfd-0ce9f79b3365"
+            isDerived="false"
+            sourceEndRoleName="客戶"
+            targetEndRoleName="付錢"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="de0dd312-34f1-4ada-b5cb-85927f577607"
+              LastKnownName="付錢"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7d1aff79-4c52-47ec-b7ba-299597dfc836"
+                  name="客戶"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5409b8c6-fc2a-44ae-b5d1-cf504f7fb3d5"
+                  name="付錢"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="a07680c6-11a3-4c0e-bab9-dd06b175b9c7"
+        name="店員"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="9fa0430b-abc2-4d81-baa9-3b66155205c4"
+            isDerived="false"
+            sourceEndRoleName="店員"
+            targetEndRoleName="做套餐"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c288f4ee-c82e-4b81-a592-860e81b2e366"
+              LastKnownName="訂單"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="50cd4128-d6ed-47e0-9117-eac181e886da"
+                  name="店員"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="33d860bc-974b-4a7e-9af6-868b31ee36ca"
+                  name="做套餐"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="961a5946-f506-4921-889b-1641063318b3"
+            isDerived="false"
+            sourceEndRoleName="店員"
+            targetEndRoleName="作套餐"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="42d2cda8-0eb0-402b-840b-b62e2a765e62"
+              LastKnownName="作套餐"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f5f2227d-f2a1-44fd-bb0a-fb04980cc176"
+                  name="店員"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1c77add5-355d-4617-87c6-43cf05eb7325"
+                  name="作套餐"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c288f4ee-c82e-4b81-a592-860e81b2e366"
+        name="訂單"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7301e8b3-232a-4068-8881-6c54efbdf7dc"
+        name="點套餐"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5415d55c-9439-4248-9324-cd352144fe04"
+        name="收到套餐"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="de0dd312-34f1-4ada-b5cb-85927f577607"
+        name="付錢"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="590a713f-55fc-46b1-9c2b-22b00c6be61d">
+            <useCaseMoniker
+              Id="42d2cda8-0eb0-402b-840b-b62e2a765e62"
+              LastKnownName="作套餐"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="42d2cda8-0eb0-402b-840b-b62e2a765e62"
+        name="作套餐"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="4de31638-9fe6-4d7a-9d44-8a2ecd636451">
+            <useCaseMoniker
+              Id="c288f4ee-c82e-4b81-a592-860e81b2e366"
+              LastKnownName="訂單"
+              LastKnownLocation="Modeling.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="abefc93f-c062-49a9-b2f7-681cadaa29f7"
+            LastKnownName="速食店"
+            LastKnownLocation="Modeling.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f170f0f9-0ee1-42e9-8b07-224eb4ffb3e1"
+        name="櫃台"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f46e2b97-6d16-479b-9251-54742f4e43f0"
+            isDerived="false"
+            sourceEndRoleName="櫃台"
+            targetEndRoleName="點購套餐"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="84cb8571-1630-4ccd-ae2e-82dceae565c3"
+              LastKnownName="點購套餐"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="82884a90-cf4f-43ae-b26b-19e10db6fdb7"
+                  name="櫃台"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="93329dd0-990a-4da6-8f2d-fc30bc89d29c"
+                  name="點購套餐"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="55d15983-51ff-4b77-a4d6-18a533420a55"
+        name="A套餐_Before"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1d738eaf-9389-498f-85e2-078532c95076"
+            name="A主餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="83bff85e-ce0a-483b-8a26-4c03de1e50d1"
+            name="A附餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="242f3236-7249-484f-85a1-5635d49548fe"
+            name="A飲料"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="32b9cbb6-4068-4b4f-8069-dac3d5221ba1"
+            name="製作A主餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b2269006-8131-4112-9140-5d37356c50bf"
+            name="製作A附餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c135cd37-db03-4419-825d-cb36f4c70062"
+            name="製作A飲料"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fbd8cf4b-b89b-4340-8c2b-2547ba480ec0"
+            name="製作A附餐2"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="19d48505-e21f-46ff-9691-ef2428bbab1f"
+        name="B套餐_Before"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="0787209d-4714-4dff-9359-c3ad2c247fbb"
+            name="B主餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4be1ddfd-a995-4e50-98f0-9eff047500d0"
+            name="B附餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1014d8f4-ea77-41d2-a222-9ca0dece93ef"
+            name="B飲料"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ce96d054-936c-4f46-94a0-7129ea8c4d6d"
+            name="製作B主餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c5458568-e5b4-4f49-b6bb-e4adde3c0106"
+            name="製作B附餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d67080ff-a87f-4811-b533-11a78ffc0020"
+            name="製作B飲料"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="85bd0fca-3bf5-4b30-9570-a3a434c18a7e"
+        name="套餐_Before"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="610a5905-42f9-4181-9911-d953056b574e"
+            name="主餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fafec9fe-184e-401d-bfab-e723d6a00ab2"
+            name="附餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="06bca540-78cd-43a0-b3a3-57f01f668381"
+            name="飲料"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e78d1140-fffe-49fd-ad5b-4d45e267cc33"
+            name="製作主餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="84490eda-95f8-415d-8cc5-f30243f9641d"
+            name="製作附餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b5afc3d8-2c10-4ef4-8ee2-72dbdec56f9b"
+            name="製作飲料"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="94e3d56f-386d-4e3a-a1c0-0332d3c156a4"
+            name="包裝套餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="24b0eb7e-07b6-4318-833e-c6e26f68d337"
+                  direction="Return" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b40e19a5-c06b-445c-8d03-1e2dd43cd43f"
+        name="店員_Before2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="51e31e47-c04e-40ac-99ce-f9126e7e4c73"
+            name="製作套餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6e88dde6-38df-470f-87f3-c126c902dfb9"
+                  name="套餐種類"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e16efe49-5eb0-4ad2-b980-fc04dd6c566b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f836fbbf-2ad2-409a-9776-8766d1808776"
+                      LastKnownName="套餐"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a653bafd-d756-48d1-b4a7-95bb1c9e9d6b"
+        name="店員_Before"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="f7f5971a-1a0c-4ca8-93e2-b926b9947681"
+            name="A套餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0e42b333-682f-4111-81f9-e2b4d3e897ac"
+            name="A主餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2ae60dba-e7d7-4754-81b7-1c6c0fcbec41"
+            name="A附餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c5171a1c-44e0-4ba6-8b71-99b1aa3ded25"
+            name="A飲料"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="800060f2-789c-4862-b83b-d2f5bef39643"
+            name="包裝A套餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5bcb6d4c-9cd7-4896-aa68-e2e77f28e2cb"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f836fbbf-2ad2-409a-9776-8766d1808776"
+                      LastKnownName="套餐"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="286b24ae-5ed0-4adc-a038-912c7751ca09"
+            name="製作A主餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ecb919fb-2f74-48a6-9fe1-c5297e989dd4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="de7484cb-3947-4bc2-be11-d44a32b11981"
+                      LastKnownName="‎主餐‎"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7e4fc306-0db0-43b9-a9f8-cab3b73ef009"
+            name="製作A附餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9a8ac8d3-e59c-4fd4-a427-ef336d2d01d1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f71e89b2-123e-496b-a652-8e5fdcfcb9b0"
+                      LastKnownName="附餐"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4f376f34-068c-4c42-a7d9-65d1de9f794d"
+            name="製作A飲料"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6c84ebb0-322b-4c42-98b8-88016adca9ce"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="626f5af9-5d37-4476-aeaa-9ab37c3edcd9"
+                      LastKnownName="飲料"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a80146a1-2139-4555-8be4-2ee8848f9b68"
+        name="店員_Before1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="897c1fb3-4a9c-4b38-87dc-2c4021c7755c"
+            name="A套餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a7a40ebe-c9d5-4b71-9078-192947285890"
+            name="A主餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f58325a3-8aad-4873-8b17-f7d3b2449761"
+            name="A附餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8f6a087f-0001-4e62-95aa-571f7fb77fcf"
+            name="A飲料"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="312042c6-9d70-44e5-96d8-49a94d49a5c5"
+            name="B主餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c76ac3a7-3512-4a57-8d7d-085ca10f027d"
+            name="B套餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7afafc9a-61f7-4aad-8cd6-0f553811175b"
+            name="B附餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8509d23c-38b7-42a9-81cd-d27849a09d2f"
+            name="B飲料"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="168387f6-6001-4cc0-a299-3a2a10969878"
+            name="包裝A套餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d6af7d0f-d01e-44f9-8cee-afbe7674a954"
+            name="製作A主餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="050b7cac-fbed-43f8-abd1-da1062ca09e9"
+            name="製作A附餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b3a25850-cd9b-4c08-b12d-31db1cef7d40"
+            name="製作A飲料"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="14f3f102-4083-4801-af21-10237c776bea"
+            name="包裝B套餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4deabb3e-db14-4c51-a2be-c3762c92c5de"
+            name="製作B主餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f84046fb-2263-45bc-ab35-3f3404a16646"
+            name="製作B附餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="770a574e-b0d7-4742-8414-1ba0b5b6fcfd"
+            name="製作B飲料"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3d93eac6-0c5b-425f-9dfa-8c89e36bfe54"
+        name="包裝套餐SOP"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="221f84a7-b20d-4485-844c-06f00808a650"
+            name="製作主餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6d0d4b90-8798-434a-bc5f-f0d19142be4a"
+            name="製作附餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="895e162f-981c-4bf3-97c5-65c70b386b81"
+            name="製作飲料"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f80fb6ff-f6e8-438e-a491-3f3f569c4a99"
+            name="包裝套餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d9ed411f-66dc-4bec-8641-98d2aed2f43a"
+                  direction="Return" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7a26d3d6-aa48-4ff8-87d3-f4388450abac"
+        name="套餐_After"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1a3a3c4c-cff6-4016-b497-33da98abd9c8"
+            name="主餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="54d512b4-218d-492b-8503-05703108a04c"
+            name="附餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b4d0ae52-7ce5-4b21-a2a4-21009af58120"
+            name="飲料"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e5a169f2-337a-4001-98ce-80a9584be66d"
+        name="店員_After"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="21c08472-3373-4e58-a2c4-9147995181e3"
+            name="包裝套餐SOP"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d95ebe3e-0157-4229-85f0-1fdc5a1a16fa"
+            name="執行包裝套餐SOP"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6c11174c-90ea-4c3a-9cd3-c0cd177aa514"
+            name="決定要執行的包裝套餐SOP"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f836fbbf-2ad2-409a-9776-8766d1808776"
+        name="套餐" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8b88fc2a-18eb-40f6-969c-a795c83a8c0b"
+        name="A套餐_After"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="9261a773-2bc5-41c3-9ce8-1297f1c0f037"
+            name="A主餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="050da5aa-1c50-4fff-831b-23d2f3a43202"
+            name="A附餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="91dcb4a5-c13c-44a2-b8bf-80fbcd4fb609"
+            name="A飲料"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0465f818-b354-41c4-bc06-83b81b23ea3d"
+        name="B套餐_After"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="73b55954-1fdc-46e9-a237-a683dd3037bb"
+            name="B主餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4e02cc9c-c6c7-43e2-8e4d-8444e864fb5e"
+            name="B附餐"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="35060fd3-ca78-45d2-8336-caae0fbf023b"
+            name="B飲料"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="82c92a20-4ea9-4510-8316-3c87a2638f5f"
+        name="包裝A套餐SOP"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="02c27afd-cbd6-47a9-9867-56f4348dcff7"
+            name="製作A主餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c8972a21-2f57-45d3-9c16-c854878c83c2"
+            name="製作B附餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f188bb1c-cfaf-4f08-a5c3-e82242ef0a53"
+            name="製作B飲料"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="02ccd523-ce7f-4178-849a-9d4fd615953d"
+            name="取得套餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d9e81ed7-4e84-4140-a64f-84977173932b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f836fbbf-2ad2-409a-9776-8766d1808776"
+                      LastKnownName="套餐"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="de7484cb-3947-4bc2-be11-d44a32b11981"
+        name="‎主餐‎" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f71e89b2-123e-496b-a652-8e5fdcfcb9b0"
+        name="附餐" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="626f5af9-5d37-4476-aeaa-9ab37c3edcd9"
+        name="飲料" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="204f11d6-5110-487a-a4ce-4bd1d214d58f"
+        name="包裝B套餐SOP"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="77e458e2-4c1d-419e-ab0f-a18bfcedc417"
+            name="製作B主餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5a73bb7d-c53e-4de7-af03-f1c7d0027ea0"
+            name="製作B附餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9579141d-32cf-40cf-b516-c5657efecae7"
+            name="製作B飲料"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a03c292e-49e7-43ed-ae8d-4a71ee540f2d"
+            name="取得套餐"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2a33ee76-5715-42ff-9748-0866626ff731"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="f836fbbf-2ad2-409a-9776-8766d1808776"
+                      LastKnownName="套餐"
+                      LastKnownLocation="Modeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

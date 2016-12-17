@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="1857593d-5f71-48dd-ab06-2a8ae2c8cef7" name="Builder" linkedPackageId="b5fe8dfe-fc5f-4dd2-95e8-1d7bf6670769" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="1857593d-5f71-48dd-ab06-2a8ae2c8cef7" name="Builder" linkedPackageId="b5fe8dfe-fc5f-4dd2-95e8-1d7bf6670769" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="26411b79-8bb4-4b4e-8f8f-29b988859b86">
+      <elementDefinition Id="94980027-70ab-4c21-b8c5-3f2e6f3a26d5" />
+      <body>包裝套餐()
+{
+   製作主餐 done
+   製作附餐 done
+   製作飲料 done
+}</body>
+    </comment>
+  </ownedCommentsInternal>
   <appliedStereotypesInternal>
     <stereotypeInstance Id="a530606b-57bc-468f-92dd-685eaedcdff2" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="56bc94f8-47ad-4ba2-8bf3-a58deb088c2b" />
@@ -72,20 +83,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="a59e6c5e-444d-43e8-b9d9-f9cff2fa5acd">
-      <profileInstance Id="0c66bca2-6664-44d2-869a-ebcd03958268" name="CSharpProfile">
-        <elementDefinition Id="19822a21-c9e6-4c03-8752-9ea60bd41f39" />
-      </profileInstance>
-      <elementDefinition Id="9587d31e-88e8-4231-a052-f83072325e4e" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="c8a1c906-9ff0-4bf5-961c-058566282916">
-      <profileInstance Id="9a1ff617-d595-4efe-9e0c-1e13470c6752" name="TextTemplateBindings">
-        <elementDefinition Id="979d2c7c-0a47-4859-869b-f6d0dc472eaf" />
-      </profileInstance>
-      <elementDefinition Id="10721491-f98f-423d-b346-bc03578b8852" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="6a09381d-5508-4b2d-a58c-947db130b145" name="ConcreteBuilder1" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -1303,6 +1300,18 @@
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a59e6c5e-444d-43e8-b9d9-f9cff2fa5acd">
+        <profileInstance Id="0c66bca2-6664-44d2-869a-ebcd03958268" name="CSharpProfile">
+          <elementDefinition Id="19822a21-c9e6-4c03-8752-9ea60bd41f39" />
+        </profileInstance>
+        <elementDefinition Id="9587d31e-88e8-4231-a052-f83072325e4e" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c8a1c906-9ff0-4bf5-961c-058566282916">
+        <profileInstance Id="9a1ff617-d595-4efe-9e0c-1e13470c6752" name="TextTemplateBindings">
+          <elementDefinition Id="979d2c7c-0a47-4859-869b-f6d0dc472eaf" />
+        </profileInstance>
+        <elementDefinition Id="10721491-f98f-423d-b346-bc03578b8852" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>

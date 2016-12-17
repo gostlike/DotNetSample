@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="77020968-c507-4e96-8529-0061722464b5" name="OrderPackage" linkedPackageId="0c0082e2-6679-429b-a96c-c56ff14b51e8" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="0079e070-80f1-4859-920b-3faf583f1827" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="56bc94f8-47ad-4ba2-8bf3-a58deb088c2b" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="40e2c037-6fa9-4a84-90fc-5558de4bee8c">
+          <propertyInstance Id="0de3a8bb-da6b-4028-84e1-4dc339f32a6c" name="BaseName">
+            <elementDefinition Id="d5e46b6b-6143-4d9d-a201-4cdc4345ea42" />
+          </propertyInstance>
+          <elementDefinition Id="dfc02137-b425-49f4-b61a-0ab8d653649b" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4911bc43-cca9-4ec6-9ad3-2e713d82f5f5">
+          <propertyInstance Id="0331c1b9-30e5-4cc4-a79b-43fcaee8e5df" name="ClrAttributes">
+            <elementDefinition Id="5d26d15f-6b63-4c94-ae54-161662852183" />
+          </propertyInstance>
+          <elementDefinition Id="ea3c6843-621c-4936-84f7-be7c54bff307" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="47947262-b8b3-4f8d-b875-09a106a1cf0f">
+          <propertyInstance Id="7d145b1b-c764-4f2b-b9ea-2838c2c0ae2c" name="Usings">
+            <elementDefinition Id="30ccbaf9-0983-4b25-8da7-dc2f72b4783c" />
+          </propertyInstance>
+          <elementDefinition Id="2ebb8aa6-8ffe-4901-9f29-f5a6df1f221b" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="ddf70c38-b691-4d15-8ec3-7f9df8add553" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="adf7dc9e-efb7-41ce-8d34-5c7d662c6e37" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="67cf3399-8bb5-484b-9b43-668e03a2d75b">
+          <propertyInstance Id="34baa616-7f02-4724-9c97-dcd43780d2ff" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="eb642e61-a670-4009-ae0b-15a433a85e32" />
+          </propertyInstance>
+          <elementDefinition Id="e4542e97-edb1-420b-b296-7dccfbb6f606" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="c5008146-f350-415e-8503-22423cbdb1e9">
+          <propertyInstance Id="5eb0291f-129f-4847-a0c5-5d00d62b9168" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="d2287670-0a3e-495a-b2f0-2c73e53f3054" />
+          </propertyInstance>
+          <elementDefinition Id="f841b601-7bc7-4c75-be52-5828ce8636c7" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="29d287f4-b465-4644-a050-e9df97ba968b">
+          <propertyInstance Id="ffb7381b-a7da-4f99-a132-caa90650fd9c" name="ProjectPath" value="ClassTemplate=..\ModelingLib\ModelingLib.csproj|EnumTemplate=..\ModelingLib\ModelingLib.csproj|InterfaceTemplate=..\ModelingLib\ModelingLib.csproj|StructTemplate=..\ModelingLib\ModelingLib.csproj">
+            <elementDefinition Id="30fbe39f-3c6f-499e-ad4f-2cfbcf74de43" />
+          </propertyInstance>
+          <elementDefinition Id="df53eee3-d0ef-4540-b01a-92f1b5d79940" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="255f5e7a-f298-4dac-8feb-a6a0db805006">
+          <propertyInstance Id="b1b4b5c9-5f7d-4c5f-84eb-99988af5aff9" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="2317043d-e669-41d7-8cf3-e44bffde029f" />
+          </propertyInstance>
+          <elementDefinition Id="680706f4-e8c2-466f-946d-d1a5ffbec0b5" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a565b136-dfd5-4bab-b231-b0fcb5184f6a">
+          <propertyInstance Id="bc5415c1-552b-4b6f-9d93-37b1fd45a4f4" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="86c5b6ee-0f52-41dd-8daf-6ffdbc5e1b59" />
+          </propertyInstance>
+          <elementDefinition Id="7e4cd445-e580-4078-960e-21b3a641cf20" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d884360a-ddd6-48cc-933b-b29a1e93b514">
+          <propertyInstance Id="0d8037db-530a-44b6-8fb1-01aa0ad96bb6" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="30e257fb-24df-49a0-82c7-3e02cb0e6001" />
+          </propertyInstance>
+          <elementDefinition Id="d95366de-49c7-4763-a688-dcb45b074033" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="57dd4914-2514-4da8-a3ed-acf394baef28">
+          <propertyInstance Id="2a44f5b2-d241-4497-9c2b-c9f373dc27b5" name="Parameters">
+            <elementDefinition Id="cac47047-f63c-465e-a4c6-c140ae9ee436" />
+          </propertyInstance>
+          <elementDefinition Id="11152105-0aee-4973-851d-a151351f7829" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="cdc680af-e71b-4ead-8a4e-5f9279e3bb4a">
+      <profileInstance Id="a17ceb33-deb6-4cec-b5b5-6d6eac8182da" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="35219b16-0dd1-4781-a280-2998330602aa">
+      <profileInstance Id="84718637-4526-4c22-b96a-35f5b86572fc" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="91153e1b-7e31-4e9a-98b8-19c22001798d">
+      <profileInstance Id="b814d277-226f-4153-8b3d-4faf91952aff" name="CSharpProfile">
+        <elementDefinition Id="19822a21-c9e6-4c03-8752-9ea60bd41f39" />
+      </profileInstance>
+      <elementDefinition Id="9587d31e-88e8-4231-a052-f83072325e4e" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="bcb05eb8-fcc7-4ae3-b115-d3f2d9409598">
+      <profileInstance Id="d4ca61a8-cb34-4930-bc79-eb27c49fc39a" name="TextTemplateBindings">
+        <elementDefinition Id="979d2c7c-0a47-4859-869b-f6d0dc472eaf" />
+      </profileInstance>
+      <elementDefinition Id="10721491-f98f-423d-b346-bc03578b8852" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="1a6063d3-4ddc-43d5-83e8-5340cae287fa" name="速食店" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="abefc93f-c062-49a9-b2f7-681cadaa29f7" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="17349420-83d6-47e2-a493-4a8f0f3df3a0" name="點購套餐" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="84cb8571-1630-4ccd-ae2e-82dceae565c3" />
+        <suppliersInternal>
+          <dependency Id="a7ba2afd-f5fb-4986-94c0-f23b0de6aca6">
+            <useCaseMoniker Id="5757b21f-edd4-4cb9-850f-ccd9b120b4d7" LastKnownName="作套餐" />
+            <elementDefinition Id="dfc33d8a-d62e-41d2-92e4-db77a1473381" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="1a6063d3-4ddc-43d5-83e8-5340cae287fa" LastKnownName="速食店" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="b72110d0-84fb-4888-8186-c979936d25f7" name="客戶" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="530d9790-a756-41a6-b040-638453fa97d0" />
+        <targetEnds>
+          <association Id="093c5534-c9d5-452d-8eab-b7807a8f3b3f" isDerived="false" sourceEndRoleName="客戶" targetEndRoleName="點套餐" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="17349420-83d6-47e2-a493-4a8f0f3df3a0" LastKnownName="點購套餐" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd78ce1c-5d86-41e5-86c2-0bc74072f12f" name="客戶" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e729c166-c886-4ead-8e17-35a0328a0e15" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3dbcf702-04ee-4860-87e0-6e34e27e7da6" name="點套餐" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7d595295-3d06-460c-955b-1b028fd5f96f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3dd72c5d-a15f-465b-8a9d-19ef3b06a51e" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="136c6183-81cd-437b-bd7e-cf8ebd81bbf8" name="店員" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a07680c6-11a3-4c0e-bab9-dd06b175b9c7" />
+        <targetEnds>
+          <association Id="721ea04f-77dc-4d69-93f2-bfa01422f6e7" isDerived="false" sourceEndRoleName="店員" targetEndRoleName="作套餐" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5757b21f-edd4-4cb9-850f-ccd9b120b4d7" LastKnownName="作套餐" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b4d9c605-3623-4614-b12f-8eeeed1ae5ed" name="店員" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f5f2227d-f2a1-44fd-bb0a-fb04980cc176" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b37b7f6-7b49-4c48-8ef0-31ee176e4b9b" name="作套餐" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1c77add5-355d-4617-87c6-43cf05eb7325" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="961a5946-f506-4921-889b-1641063318b3" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="5757b21f-edd4-4cb9-850f-ccd9b120b4d7" name="作套餐" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="42d2cda8-0eb0-402b-840b-b62e2a765e62" />
+        <subjects>
+          <subsystemMoniker Id="1a6063d3-4ddc-43d5-83e8-5340cae287fa" LastKnownName="速食店" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="a57541db-3ca7-408b-8106-68ca128c0185" name="櫃台" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f170f0f9-0ee1-42e9-8b07-224eb4ffb3e1" />
+        <targetEnds>
+          <association Id="4c3bfc1d-b832-4ea3-9421-6597d492207b" isDerived="false" sourceEndRoleName="櫃台" targetEndRoleName="點購套餐" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="17349420-83d6-47e2-a493-4a8f0f3df3a0" LastKnownName="點購套餐" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e64cded-1d75-4361-b99b-e08b302ae52f" name="櫃台" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="82884a90-cf4f-43ae-b26b-19e10db6fdb7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d9c13e00-59e1-4ffa-bd3d-5d346e67080a" name="點購套餐" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="93329dd0-990a-4da6-8f2d-fc30bc89d29c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f46e2b97-6d16-479b-9251-54742f4e43f0" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="0c0082e2-6679-429b-a96c-c56ff14b51e8" name="Modeling">
+    <elementDefinition Id="557c96d5-36b7-4f08-a2f0-04be4a88cdba" />
+  </package>
+</useCaseModelRoot>

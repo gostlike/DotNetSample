@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="OrderPackage">
+  <useCaseModelRootMoniker Id="77020968-c507-4e96-8529-0061722464b5" />
+  <nestedChildShapes>
+    <actorShape Id="13b80599-1cbb-4603-87f8-388d721d22bc" absoluteBounds="0.5, 1.75, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="b72110d0-84fb-4888-8186-c979936d25f7" LastKnownName="客戶" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="f019f946-37ab-4dcf-b732-15828b9c87d1" absoluteBounds="5.25, 1.75, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="136c6183-81cd-437b-bd7e-cf8ebd81bbf8" LastKnownName="店員" />
+      <relativeChildShapes />
+    </actorShape>
+    <actorShape Id="823d6a1e-a559-483f-8bb7-706ff56e3eb8" absoluteBounds="2.375, 0.875, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="a57541db-3ca7-408b-8106-68ca128c0185" LastKnownName="櫃台" />
+      <relativeChildShapes />
+    </actorShape>
+    <SubsystemShape Id="0775aa31-f32a-439b-a1cb-a95173724654" absoluteBounds="1.25, 1.625, 3.625, 3" customColor="White">
+      <subsystemMoniker Id="1a6063d3-4ddc-43d5-83e8-5340cae287fa" LastKnownName="速食店" />
+      <nestedChildShapes>
+        <useCaseShape Id="b93ca9f4-02fe-4e6a-a0c1-01cbe3e69b8a" absoluteBounds="1.625, 2.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="17349420-83d6-47e2-a493-4a8f0f3df3a0" LastKnownName="點購套餐" />
+          <relativeChildShapes />
+        </useCaseShape>
+        <useCaseShape Id="15555196-5d54-40de-bc25-171df8850f45" absoluteBounds="3.25, 2.5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+          <useCaseMoniker Id="5757b21f-edd4-4cb9-850f-ccd9b120b4d7" LastKnownName="作套餐" />
+          <relativeChildShapes />
+        </useCaseShape>
+      </nestedChildShapes>
+    </SubsystemShape>
+    <useCaseAssociationConnector edgePoints="[(5.25 : 2.10714285714286); (4.12962830118265 : 2.58730215663601)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="721ea04f-77dc-4d69-93f2-bfa01422f6e7" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="f019f946-37ab-4dcf-b732-15828b9c87d1" />
+        <useCaseShapeMoniker Id="15555196-5d54-40de-bc25-171df8850f45" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(1 : 2.09090909090909); (1.72063195784841 : 2.35295707558124)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="093c5534-c9d5-452d-8eab-b7807a8f3b3f" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="13b80599-1cbb-4603-87f8-388d721d22bc" />
+        <useCaseShapeMoniker Id="b93ca9f4-02fe-4e6a-a0c1-01cbe3e69b8a" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseDependencyConnector edgePoints="[(2.60288950436098 : 2.57352146220938); (3.27211049563902 : 2.67647853779062)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="a7ba2afd-f5fb-4986-94c0-f23b0de6aca6" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="b93ca9f4-02fe-4e6a-a0c1-01cbe3e69b8a" />
+        <useCaseShapeMoniker Id="15555196-5d54-40de-bc25-171df8850f45" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <useCaseAssociationConnector edgePoints="[(2.53409090909091 : 1.375); (2.21444271909999 : 2.25403252247502)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="4c3bfc1d-b832-4ea3-9421-6597d492207b" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="823d6a1e-a559-483f-8bb7-706ff56e3eb8" />
+        <useCaseShapeMoniker Id="b93ca9f4-02fe-4e6a-a0c1-01cbe3e69b8a" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

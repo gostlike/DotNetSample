@@ -22,6 +22,34 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="Builder.before.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Builder.before.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Builder.before.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Builder.before2.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Builder.before2.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Builder.before2.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="OrderPackage.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="OrderPackage.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>OrderPackage.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Builder.after.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Builder.after.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Builder.after.classdiagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="Builder.classdiagram">
       <SubType>Content</SubType>
